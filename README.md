@@ -10,7 +10,7 @@ The system consists of three primary components:
 3. **Infrastructure**: RabbitMQ (Broker), Elasticsearch (Search Engine), and Kibana (Visualization).
 
 ### Data Flow
-`Publisher` $\xrightarrow{\text{JSON/AMQP}}$ `RabbitMQ (gate_events_queue)` $\xrightarrow{\text{Push}}$ `Consumer` $\xrightarrow{\text{REST}}$ `Elasticsearch` $\xrightarrow{\text{Query}}$ `Kibana`
+`Publisher` -> `RabbitMQ (gate_events_queue)` -> `Consumer` -> `Elasticsearch` -> `Kibana`
 
 ---
 
